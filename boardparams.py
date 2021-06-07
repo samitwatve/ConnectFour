@@ -49,3 +49,12 @@ for c in range(COLUMN_COUNT-4,COLUMN_COUNT):
     for r in range(ROW_COUNT-3):
         neg_diag_windows.append([(r, c), (r+1, c-1), (r+2, c-2), (r+3,c-3)])
 
+all_windows = horizontal_windows + vertical_windows + pos_diag_windows + neg_diag_windows
+
+#For color display
+RED_BG = '\033[0;30;41m'
+GREEN_BG = '\033[0;30;42m'
+YELLOW_BG = '\033[0;30;43m'
+BLUE_BG = '\033[0;30;44m'
+PINK_BG = '\033[0;30;45m'
+COLOR_OFF = '\033[0m'
